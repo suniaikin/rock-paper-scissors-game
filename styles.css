@@ -1,0 +1,196 @@
+* ,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    height: 100vh;
+    margin-top: 50px;
+
+ }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.main-container {
+    width: 100%;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 21px;
+}
+
+.choices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-left: solid 1px gray;
+    padding-left: 10px;
+
+}
+
+.choice img {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border: solid 1px lightgray;
+    border-radius: 10px;
+
+}
+
+.choice img:hover {
+    transform: scale(1.2);
+    border: solid 2px #ec0206;
+}
+
+.choice-title {
+    margin-bottom: 30px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+.user-box,
+.computer-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.user-title {
+    margin-bottom: 15px;
+}
+
+.wrapper img {
+    width: 200px;
+    height: 200px;
+}
+
+#counter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 15px;
+}
+
+#game-result {
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.you-win {
+    color: #ec0206;
+}
+
+.computer-win {
+    color: #007BFF;
+}
+
+.in-line-to-block {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.score {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.score-box-computer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    background-color: #007BFF;
+    color: white;
+}
+
+.score-box-user {
+    background-color: #ec0206;
+    color: white;
+}
+
+.music-button {
+    margin-top: 30px;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+
+}
+.music-button:hover {
+    transform: scale(1.1);
+}
+
+.music-button img {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+}
+
+sound-container. {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.idle-shake {
+    animation: idle-shake 1.5s infinite ease-in-out;
+}
+
+@keyframes idle-shake {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.pop-animation {
+    animation: pop-out 0.6s ease-out;
+}
+
+@keyframes pop-out {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

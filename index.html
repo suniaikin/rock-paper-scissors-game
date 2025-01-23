@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Камень, ножницы, бумага</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    </head>
+<body>
+<audio id="music" loop>
+    <source src="YHVJS.mp3" type="audio/mpeg">
+</audio>
+<h2>"Камень, ножницы, бумага"</h2>
+
+<div class="main-container">
+
+    <div class="container">
+
+        <div class="wrapper">
+            <div class="computer-title">
+                Выбор компьютера:
+            </div>
+
+            <div class="computer-box">
+                <div id="computer-choice"></div>
+                <div id="game-result"></div>
+            </div>
+
+            <div class="score-box-computer">
+                <div id="computer-title"></div>
+                <div id="computer-stat"></div>
+            </div>
+
+        </div>
+
+        <div class="choices">
+            <div class="user-title">
+                Ваш выбор:
+            </div>
+
+            <div class="user-buttons">
+
+            <div class="choice" onclick="playGame('Камень')">
+                <img src="./images/rock.png" alt="Камень">
+                <span class="in-line-to-block">Камень</span>
+            </div>
+
+            <div class="choice" onclick="playGame('Ножницы')">
+                <img src="./images/scissors.png" alt="Ножницы">
+                <span class="in-line-to-block">Ножницы</span>
+            </div>
+
+            <div class="choice" onclick="playGame('Бумага')">
+                <img src="./images/paper.png" alt="Бумага">
+                <span class="in-line-to-block">Бумага</span>
+            </div>
+
+            </div>
+
+            <div class="score-box-user">
+                <div id="user-title"></div>
+                <div id="user-stat"></div>
+            </div>
+
+        </div>
+
+   </div>
+
+</div>
+
+<div class="sound-container">
+<button class="music-button" onclick="document.getElementById('music').play()"><img src="./images/play-music.png"></button>
+<button class="music-button" onclick="document.getElementById('music').pause()"><img src="./images/stop-music.png"></button>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
